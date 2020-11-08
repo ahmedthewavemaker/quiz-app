@@ -220,7 +220,9 @@ function render() {
     html = generateQuestionNumberAndScore();
     html += generateQuestionHtml();
     $('main').html(html);
+    $('#next-question-button').hide();
   }
+
 
   else {
     $('main').html(generateResultsPage());
