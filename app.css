@@ -1,0 +1,164 @@
+/* Your styles should be mobile-first and responsive */
+
+/** 
+  * If you are unclear on how to utilize a mobile-first, responsive technique to write your CSS, here is an example: 
+  *
+  * https://github.com/andreacardybailey/responsive_example/blob/master/styles/responsive-base.css 
+  *
+*/
+
+*{
+  box-sizing: border-box;
+}
+
+html,body{
+  overflow: auto;
+  height: 100%;
+}
+body{
+  background-image: url(soccer-pic.jpg);
+  background: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+header{
+  text-align: center;
+}
+
+h1{
+  font-size: 70px;
+  color: #f6fa03;
+  font-family: fantasy;
+  letter-spacing: 3px;
+  padding: .67em 10px;
+  margin: 0;
+  
+}
+
+.start-screen{
+  width: 80%;
+  padding: 40px;
+  margin: 60px auto 0 auto;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.question-and-score{
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  font-size: 30px;
+  list-style: none;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  padding: 5px;
+  margin: 40px;
+  border-radius: 3px;
+}
+
+form{
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 80%;
+  padding: 5px;
+  margin: 40px;
+  border-radius: 5px;
+}
+.question-form .question{
+  font-weight: bold;
+  padding: 20px;
+  font-size: 18px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+}
+
+.question-form .options{
+  font-size: 18px;
+  padding: 20px;
+  }
+
+  .question-form .answers{
+    display: block;
+    justify-content: space-between;
+  }
+
+  .option-containers{
+    margin: 10px;
+    font-size: 18px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+  }
+
+  button{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+    font-size: 18px;
+    color: black;
+    background-color: gold;
+    border-radius: 4px;
+    margin-right: 15px;
+    border:0;
+    padding: 5px;
+  }
+
+ button:hover{
+   background-color: yellow;
+ }
+
+ .right-answer{
+   background-color: rgb(7, 165, 7);
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+   font-size: 18px;
+   padding: 10px;
+   margin: 15px 20px;
+   border-radius: 4px;
+   color: white;
+ }
+
+ .wrong-answer{
+   background-color: red;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+   font-size: 18px;
+   padding: 10px;
+   margin: 15px 20px;
+   border-radius: 4px;
+   color: white;
+ }
+
+ .results{
+   font-size: 20px;
+   font-weight: bold;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande';
+   
+ }
+
+ .restart-quiz-button{
+   margin: 30px 40px;
+ }
+
+
+ @media all and (max-width: 700px){
+   body{
+     margin-bottom: 0;
+   }
+   .question-form{
+     font-size: 10px;
+   }
+   header{
+     font-size: 50px;
+   }
+  .question-and-score{
+    background-color:  rgba(255, 255, 255, 0.8);
+  }
+
+  .right-answer{
+    font-size: 10px;
+  }
+
+  .wrong-answer{
+    font-size: 10px;
+  }
+  
+ }
+
+
